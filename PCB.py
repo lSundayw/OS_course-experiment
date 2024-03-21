@@ -1,0 +1,9 @@
+class PCB(object):
+    def __init__(self):
+        self.PID='' #进程名
+        self.Status='' #进程状态
+        self.Child=[] #子进程
+        self.Parent='null' #父进程
+        self.Priority=0 #优先级为0，1，2
+        self.Resource_occupancy=[0,0,0,0]    #当前占有四类资源数
+        self.Block_resource_type=0    #引起阻塞资源的种类,1为R1，2为R2，3为R3，4为R4
